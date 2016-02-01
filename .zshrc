@@ -8,6 +8,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle z
+antigen bundle fasd
 antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
