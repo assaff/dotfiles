@@ -24,8 +24,11 @@ antigen bundle python
 antigen bundle pip
 antigen bundle virtualenvwrapper
 
+antigen bundle vi-mode
+
 antigen apply
 
+export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/opt/maven/bin
 
 alias glog='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
@@ -41,3 +44,12 @@ clfu() {
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
+
+# bind k and j for VI mode
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+
+# activate vi mode
+bindkey -v
+
+bindkey '^B' push-line-or-edit
