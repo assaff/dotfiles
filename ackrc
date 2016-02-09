@@ -1,0 +1,18 @@
+--type-set=pdb=.pdb
+--type-set=csv=.csv
+--type-set=rst=.rst
+--type-set=pymol=.pml,.pse
+--type-set=pml=.pml
+--type-set=video=.mp4,.avi,.mkv,.mov,.mpg,.mpeg,.wmv
+--type-set=audio=.mp3,.aac,.ogg,.wav,.wma,.m4a
+--type-set=image=.jpg,.jpeg,.png,.gif,.bmp
+--type-set=ipy=.ipynb
+--type-set=part=.part
+--type-set=properties=.properties
+--type-set=csv=.csv
+--type-set=log=.log
+
+#--pager=LESS=FSRX less -r
+
+--smart-case
+--follow
