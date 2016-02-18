@@ -50,6 +50,8 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 # activate vi mode
-bindkey -v
+#bindkey -v
 
 bindkey '^B' push-line-or-edit
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
