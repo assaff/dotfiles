@@ -3,11 +3,11 @@ antigen use oh-my-zsh
 
 antigen theme agnoster
 
-antigen bundle rupa/z
+#antigen bundle rupa/z
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle z
+#antigen bundle z
 antigen bundle fasd
 antigen bundle git
 antigen bundle git-extras
@@ -24,9 +24,11 @@ antigen bundle python
 antigen bundle pip
 antigen bundle virtualenvwrapper
 
-antigen bundle vi-mode
+#antigen bundle vi-mode
 
 antigen apply
+
+export EDITOR=vim
 
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/opt/maven/bin
@@ -55,3 +57,12 @@ bindkey -M vicmd 'j' history-substring-search-down
 bindkey '^B' push-line-or-edit
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+export JAVA_HOME=$(jenv javahome)
+
+source $HOME/dev/tools/google-cloud-sdk/path.zsh.inc
+#source $HOME/dev/tools/google-cloud-sdk/completion.zsh.inc
+
+export PATH=$HOME/anaconda3/bin:$PATH
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
